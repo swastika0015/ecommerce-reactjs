@@ -1,7 +1,6 @@
-import Navbar from "./navigation/navbar";
-import Footer from "./footer/footer" 
 
-export{
-    Navbar,
-    Footer
-};
+import Footer from './footer/footer';
+import Navbar from './navbar/navbar';
+import Mainpagecard from './mainpagecard/mainpagecard';
+
+export { Navbar, Footer, Mainpagecard };

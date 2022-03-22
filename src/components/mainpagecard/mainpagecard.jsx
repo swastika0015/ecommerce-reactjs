@@ -1,7 +1,8 @@
 import React from 'react';
-import pic from "../"
+import "./mainpagecard.css";
+import pic from "../../assets/women.jpg"
 
-const pic = "#"
+
 
 const Mainpagecard = () => {
   return (

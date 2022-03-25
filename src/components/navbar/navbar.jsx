@@ -1,5 +1,6 @@
 import "./navbar.css";
 import pic from "../../assets/logo.png";
+import link from "../../pages/productlist"
 
 const Navbar = () => {
     return (
@@ -8,7 +9,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="nav-items flex-flow-row">
                 <div className="nav-item"><img src={pic} height="40rem" width="100rem"/></div>
-                <div className="nav-item"><a href="#">Categories</a></div>
+                <div className="nav-item"><a href={link}>Categories</a></div>
                 <div className="nav-item"><a>Clothing</a></div>
                 <div className="nav-item"><a>Brands</a></div>
                 <div className="nav-item"><a>Beauty</a></div>

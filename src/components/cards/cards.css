@@ -1,0 +1,26 @@
+
+/*cards*/
+.product-cards{
+    flex-grow: 2;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--dark-grey-color);
+    padding: 1rem;
+}
+.card{
+    box-shadow: none;
+    margin: 5px;
+}
+.card:hover{
+    box-shadow: 0 5px 5px var(--shadow-color), 0 6px 20px 0 var(--shadow-color);;
+}
+.card-component{
+    width: 17rem;
+}
+.card-img{
+    height: 17rem;
+}
+.card-details{
+    text-align: left;
+}

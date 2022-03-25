@@ -1,5 +1,4 @@
 import React from 'react';
-import "./mainpagecard.css";
 import Card1 from './card1';
 import card1data from './card1data';
 

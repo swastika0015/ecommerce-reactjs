@@ -1,0 +1,18 @@
+
+.card-container{
+    padding: 1rem;
+    padding-top: 2rem;
+}
+.card-items{
+    justify-content: space-evenly;
+}
+.card-details{
+    text-align: center;
+}
+.card1-component{
+    width: 22rem;
+}
+.bestseller-badge{
+    font-size: 2rem;
+    opacity: 0.8;
+}

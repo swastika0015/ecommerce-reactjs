@@ -9,7 +9,7 @@ const Homepage = () => {
     return (
         <div>
             <Navbar/>
-            <section>
+            <section className="section">
                 <div className="main-container">
                     <img className="img-container" src={pic}/>
                 </div>

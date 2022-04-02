@@ -6,7 +6,6 @@
 .sidebar-item{
     border-top: 1px solid var(--dark-grey-color);
     padding: 1rem;
-    border-right: 1px solid var(--dark-grey-color);
 }
 
 .sidebar-heading{

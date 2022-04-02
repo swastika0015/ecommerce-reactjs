@@ -1,6 +1,7 @@
 import React from 'react'
 import Cards from './cards'
 import cardsData from './cardsData'
+import './productcards.css'
 
 const Productcards = () => {
     const cardElements = cardsData.map(card => {
@@ -9,7 +10,7 @@ const Productcards = () => {
     })
   return (
 
-    <div className="flex-flow-row product-cards">
+    <div className="flex-flow-row wrap product-cards">
     {cardElements}
     </div>
   )

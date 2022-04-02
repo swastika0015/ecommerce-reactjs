@@ -1,7 +1,7 @@
 import React from "react";
-import pic from "../assets/main.jpg";
+import pic from "../../assets/main.jpg";
 import "./homepage.css";
-import {Navbar, Footer, Mainpagecard } from '../components/index';
+import {Navbar, Footer, Mainpagecard } from '../../components/index';
 
 
 

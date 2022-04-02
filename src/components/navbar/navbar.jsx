@@ -1,13 +1,13 @@
 import "./navbar.css";
 import pic from "../../assets/logo.png";
-import link from "../../pages/productlist"
+import link from "../../pages/productlist/productlist"
 
 const Navbar = () => {
     return (
 
         <header>
         <div className="navbar">
-            <div className="nav-items flex-flow-row">
+            <div className="nav-items wrap flex-flow-row">
                 <div className="nav-item"><img src={pic} height="40rem" width="100rem"/></div>
                 <div className="nav-item"><a href={link}>Categories</a></div>
                 <div className="nav-item"><a>Clothing</a></div>
@@ -19,7 +19,7 @@ const Navbar = () => {
                       <input type="text" placeholder="Search.." name="search"/>
                     </form>
                   </div>
-                  <div className="nav-items-right flex-flow-row">
+                  <div className="nav-items-right wrap flex-flow-row">
                     <div className="nav-item"><i className="fa fa-user fa-lg" aria-hidden="true"></i></div>
                     <div className="nav-item"><i className="fa fa-heart fa-lg" aria-hidden="true"></i></div>
                     <div className="nav-item"><i className="fa fa-shopping-bag fa-lg" aria-hidden="true"></i></div>                     

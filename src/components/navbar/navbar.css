@@ -18,7 +18,9 @@
    .flex-flow-row{
        display: flex;
        flex-direction: row;
-       flex-wrap: wrap;
+   }
+   .wrap{
+    flex-wrap: wrap;
    }
    .flex-flow-column{
        display: flex;

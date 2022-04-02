@@ -1,12 +1,9 @@
-@import "../index.css";
+
 
 section{
     padding: 0;
 }
-.main-container{
-    flex-wrap: nowrap;
-  
-}
+
 .slider {
     -webkit-appearance: none;
     height: 8px;

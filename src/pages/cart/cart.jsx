@@ -10,14 +10,14 @@ const Cart = () => {
     <div>
         <Navbar/>
         <section>
-        <div class="main-container flex-flow-row mg-2">
-            <div class="flex-flow-column cart-items">
-                <div class="card-cart card-component flex-flow-row card-horizontal">
-                    <img class="card-img card-img-horizontal" src={pic1}/>
-                  <div class="card-details flex-flow-column-horizontal flex-flow-column">
+        <div className="main-container flex-flow-row mg-2">
+            <div className="flex-flow-column cart-items">
+                <div className="card-cart card-component flex-flow-row card-horizontal">
+                    <img className="card-img card-img-horizontal" src={pic1}/>
+                  <div className="card-details flex-flow-column-horizontal flex-flow-column">
                     <h3>Nike</h3>
                     <p>Red hoodie dress.</p>
-                    <div class="dropdown flex-flow-row">
+                    <div className="dropdown flex-flow-row">
                         <label for="quantity">Qty</label>
                         <select name="quantity">
                         <option value="1">1</option>
@@ -36,22 +36,22 @@ const Cart = () => {
                         </select>
                     </div>
 
-                    <p class="price"><ins>Rs 999</ins> <del>Rs 1299</del></p>
+                    <p className="price"><ins>Rs 999</ins> <del>Rs 1299</del></p>
                     <p>Delivery by 1 Mar 2022</p>
-                    <div class="card-actions">
-                        <button class="card-action-btn  card-btn">
-                            <i class="fa fa-cross  fa-lg"></i>Remove
+                    <div className="card-actions">
+                        <button className="card-action-btn  card-btn">
+                            <i className="fa fa-cross  fa-lg"></i>Remove
                         </button>
                     </div>
                   </div>
                 </div>
 
-                <div class="card-cart card-component flex-flow-row card-horizontal">
-                    <img class="card-img card-img-horizontal" src={pic2}/>
-                  <div class="card-details flex-flow-column-horizontal flex-flow-column">
+                <div className="card-cart card-component flex-flow-row card-horizontal">
+                    <img className="card-img card-img-horizontal" src={pic2}/>
+                  <div className="card-details flex-flow-column-horizontal flex-flow-column">
                     <h3>H&M</h3>
                     <p>Yellow H&M crop hoodie.</p>
-                    <div class="dropdown flex-flow-row">
+                    <div className="dropdown flex-flow-row">
                         <label for="quantity">Qty</label>
                         <select name="quantity">
                         <option value="1">1</option>
@@ -70,30 +70,30 @@ const Cart = () => {
                         </select>
                     </div>
 
-                    <p class="price"><ins>Rs 1299</ins> <del>Rs 2299</del></p>
+                    <p className="price"><ins>Rs 1299</ins> <del>Rs 2299</del></p>
                     <p>Delivery by 1 Mar 2022</p>
-                    <div class="card-actions">
-                        <button class="card-action-btn  card-btn">
-                            <i class="fa fa-cross  fa-lg"></i>Remove
+                    <div className="card-actions">
+                        <button className="card-action-btn  card-btn">
+                            <i className="fa fa-cross  fa-lg"></i>Remove
                         </button>
                     </div>
                   </div>
                 </div>   
 
-                <div class="card-cart card-component flex-flow-row card-horizontal  wishlist-add">
+                <div className="card-cart card-component flex-flow-row card-horizontal  wishlist-add">
                     
-                  <div class="card-details wishlist-add">
+                  <div className="card-details wishlist-add">
                     <h3><a href="../wishlist/wishlist.html">Add more items from Wishlist!</a></h3>
                     </div>
                 </div>   
             </div>
 
-            <div class="bill-sidebar flex-flow-column">
+            <div className="bill-sidebar flex-flow-column">
                 
-                    <div class="price-details flex-flow-row">
+                    <div className="price-details flex-flow-row">
                         <h3><a>Coupon</a></h3>
-                        <div class="card-actions">
-                            <button class="card-action-btn card-btn cart-btn">
+                        <div className="card-actions">
+                            <button className="card-action-btn card-btn cart-btn">
                              Apply
                             </button>
                         </div>
@@ -101,29 +101,29 @@ const Cart = () => {
                     <hr/>
                     <h3>Price Details</h3>
                     <hr/>
-                    <div class="price-details flex-flow-row">
+                    <div className="price-details flex-flow-row">
                         <p>Total MRP</p>
                         <p>Rs 2299</p>
                     </div>
     
-                    <div class="price-details discount flex-flow-row">
+                    <div className="price-details discount flex-flow-row">
                         <p>Discount</p>
                         <p>Rs 1300</p>
                     </div>
                     <hr/>
-                    <div class="price-details discount flex-flow-row">
+                    <div className="price-details discount flex-flow-row">
                         <p>Convinience fee</p>
                         <p>Free</p>
                     </div>
                     <hr/>
-                    <div class="price-details discount flex-flow-row">
+                    <div className="price-details discount flex-flow-row">
                         <h3>Total Amount</h3>
                         <h3>Rs 2299</h3>
                     </div>
                     <hr/>
 
-                    <div class="card-actions">
-                        <button class="card-action-btn cart-btn">
+                    <div className="card-actions">
+                        <button className="card-action-btn cart-btn">
                             Proceed to pay
                         </button>
                     </div>

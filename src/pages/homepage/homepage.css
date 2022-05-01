@@ -6,7 +6,7 @@
 .main-container{
     position: relative;
 }
-.img-container{
+.img-main{
     width: 100%; 
     object-fit: cover;
     height: 34rem;

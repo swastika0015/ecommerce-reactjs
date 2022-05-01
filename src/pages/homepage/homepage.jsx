@@ -11,7 +11,7 @@ const Homepage = () => {
             <Navbar/>
             <section className="section">
                 <div className="main-container">
-                    <img className="img-container" src={pic}/>
+                    <img className="img-main" src={pic}/>
                 </div>
                 <Mainpagecard />
             </section>

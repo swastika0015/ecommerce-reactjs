@@ -5,7 +5,7 @@ const Card1 = (props) => {
   return (
         <div className="card shadow card1-component">
             <img className="card1-img" src={props.img}/>
-            <div className="card-details flex-flow-column">
+            <div className="card1-details flex-flow-column">
                 <h2><a>{props.heading}</a></h2> 
             </div>
         </div>

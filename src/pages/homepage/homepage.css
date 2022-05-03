@@ -1,10 +1,12 @@
-section{
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@350&display=swap");
+.section{
     padding: 2rem;
 }
 .main-container{
     position: relative;
 }
-.img-container{
+.img-main{
     width: 100%; 
     object-fit: cover;
     height: 34rem;

@@ -5,6 +5,7 @@ import pic3 from '../../assets/women2.jpg'
 
 export default [
     {
+        id: 1,
         img: pic1,
         link: '',
         outofstock: '',
@@ -14,6 +15,7 @@ export default [
         originalPrice: 'Rs 1299',
     },
     {
+        id: 2,
         img: pic2,
         link: '',
         outofstock: '',
@@ -23,6 +25,7 @@ export default [
         originalPrice: 'Rs 1299',       
     },
     {
+        id: 3,
         img: pic2,
         link: '',
         outofstock: '',
@@ -32,6 +35,7 @@ export default [
         originalPrice: 'Rs 1299',       
     },
     {
+        id: 4,
         img: pic1,
         link: '',
         outofstock: '',
@@ -41,6 +45,7 @@ export default [
         originalPrice: 'Rs 1299',       
     },
     {
+        id: 5,
         img: pic2,
         link: '',
         outofstock: '',
@@ -50,6 +55,7 @@ export default [
         originalPrice: 'Rs 1299',       
     },
     {
+        id: 6,
         img: pic3,
         link: '',
         outofstock: '',
@@ -59,6 +65,7 @@ export default [
         originalPrice: 'Rs 1299',       
     },
     {
+        id: 7,
         img: pic2,
         link: '',
         outofstock: '',
@@ -68,6 +75,7 @@ export default [
         originalPrice: 'Rs 1299',       
     },
     {
+        id: 8,
         img: pic3,
         link: '',
         outofstock: 'Out of stock',

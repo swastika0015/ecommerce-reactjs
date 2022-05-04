@@ -4,8 +4,7 @@ import './cards.css'
 const Cards = (props) => {
   return (
        
-                <div className="card card-component">
-                  <a href='#'>
+                <div className="card card-component">               
                   {props.outofstock && <div className="text-overlay">
                         <h2>{props.outofstock}</h2>
                     </div>}
@@ -16,9 +15,8 @@ const Cards = (props) => {
                         <p className="price"><ins>{props.price}</ins> <del>{props.originalPrice}</del></p>
                     </div>
                     <div className="card-actions">
-                        <button className=" card-action-btn card-btn"><i className="fa fa-shopping-cart fa-lg"></i>Add to card</button>
+                        <button className=" card-action-btn"><i className="fa fa-shopping-cart fa-lg"></i>Add to card</button>
                     </div>
-                  </a>
                 </div>          
   )
 }

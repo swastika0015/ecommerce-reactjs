@@ -47,8 +47,8 @@ const Cart = () => {
                 </div>
 
                 <div className="card-cart card-component flex-flow-row card-horizontal">
-                    <img className="card-img card-img-horizontal" src={pic2}/>
-                  <div className="card-details flex-flow-column-horizontal flex-flow-column">
+                    <img className="cart-img card-img-horizontal" src={pic2}/>
+                  <div className="cart-details flex-flow-column-horizontal flex-flow-column">
                     <h3>H&M</h3>
                     <p>Yellow H&M crop hoodie.</p>
                     <div className="dropdown flex-flow-row">

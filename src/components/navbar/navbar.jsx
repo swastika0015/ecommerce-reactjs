@@ -1,6 +1,6 @@
 import "./navbar.css";
 import pic from "../../assets/logo.png";
-import link from "../../pages/productlist/productlist"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -8,22 +8,22 @@ const Navbar = () => {
         <header>
         <div className="navbar">
             <div className="nav-items wrap flex-flow-row">
-                <div className="nav-item"><img src={pic} height="40rem" width="100rem"/></div>
-                <div className="nav-item"><a href={link}>Categories</a></div>
-                <div className="nav-item"><a>Clothing</a></div>
-                <div className="nav-item"><a>Brands</a></div>
-                <div className="nav-item"><a>Beauty</a></div>
+                <Link to="/"><div className="nav-item"><img src={pic} height="40rem" width="100rem" alt="logo"/></div></Link>
+                <Link to="/productlist"><div className="nav-item">Categories</div></Link>
+                <Link to="/productlist"><div className="nav-item">Clothing</div></Link>
+                <Link to="/productlist"><div className="nav-item">Brands</div></Link>
+                <Link to="/productlist"><div className="nav-item">Beauty</div></Link>
                 <div className="search-container">
-                    <form>
-                      <button type="submit"><i className="fa fa-search"></i></button>
-                      <input type="text" placeholder="Search.." name="search"/>
-                    </form>
-                  </div>
-                  <div className="nav-items-right wrap flex-flow-row">
-                    <div className="nav-item"><i className="fa fa-user fa-lg" aria-hidden="true"></i></div>
-                    <div className="nav-item"><i className="fa fa-heart fa-lg" aria-hidden="true"></i></div>
-                    <div className="nav-item"><i className="fa fa-shopping-bag fa-lg" aria-hidden="true"></i></div>                     
-                  </div>
+                  <form>
+                    <button type="submit"><i className="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search.." name="search"/>
+                  </form>
+                </div>
+                <div className="nav-items-right wrap flex-flow-row">
+                <Link to="/login"><div className="nav-item"><i className="fa fa-user fa-lg" aria-hidden="true"></i></div></Link>
+                <Link to="/whishlist"><div className="nav-item"><i className="fa fa-heart fa-lg" aria-hidden="true"></i></div></Link>
+                <Link to="/cart"><div className="nav-item"><i className="fa fa-shopping-bag fa-lg" aria-hidden="true"></i></div></Link>                   
+                </div>
             </div>
         </div>
     </header>

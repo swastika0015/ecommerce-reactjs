@@ -3,7 +3,7 @@ import pic from '../../assets/women.jpg'
 import './productpage.css'
 import { Navbar, Footer } from '../../components'
 
-const Productpage = () => {
+const ProductPage = () => {
   return (
     <div>
         <Navbar/>
@@ -67,4 +67,4 @@ const Productpage = () => {
   )
 }
 
-export default Productpage
+export default ProductPage

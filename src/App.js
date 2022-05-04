@@ -1,20 +1,24 @@
 import './App.css';
 import { Homepage } from './pages';
-import { Productlist } from './pages';
-import { Productpage } from './pages';
+import { ProductList } from './pages';
+import { ProductPage } from './pages';
 import { ReactDOM } from 'react';
 import { Cart } from './pages';
 import { Login } from './pages';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 
 
 function App() {
   return (
     <>
-        
-      
-        <Homepage/>
-     
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/productlist" element={<ProductList />} />
+      <Route path="/cart" element={<Cart/>} />
+      <Route path="/login" element={<Login/>} />
+      <Route path="/cart" element={<Cart/>} />
+      <Route path="/productpage" element={<ProductPage/>} />
+    </Routes>
     </>
   );
 }

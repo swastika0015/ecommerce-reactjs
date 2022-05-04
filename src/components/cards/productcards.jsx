@@ -6,7 +6,7 @@ import './productcards.css'
 const Productcards = () => {
     const cardElements = cardsData.map(card => {
         return <Cards img={card.img} heading={card.heading} subheading={card.subheading} link={card.link} outofstock={card.outofstock} price={card.price}
-        originalPrice={card.originalPrice}/> 
+        originalPrice={card.originalPrice} key={card.id}/> 
     })
   return (
 

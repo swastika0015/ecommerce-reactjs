@@ -5,10 +5,10 @@
     border: 1px solid var(--dark-grey-color);
     padding: 1rem;
 }
-.card-img{
+.cart-img{
     width: 10rem;
 }
-.card-details{
+.cart-details{
     text-align: left;
     padding: 0;
     padding-left: 1rem;

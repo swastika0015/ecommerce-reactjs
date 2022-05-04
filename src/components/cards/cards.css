@@ -1,4 +1,7 @@
 
+:root{
+    --shadow-color: #b8b8b3d2;
+}
 /*cards*/
 .product-cards{
     flex-grow: 2;
@@ -25,9 +28,6 @@
     text-align: left;
 }
 
-:root{
-    --shadow-color: #b8b8b3d2;
-}
 .container{
     padding: 1rem;
     gap: 2rem;
@@ -60,6 +60,7 @@
 }
 .price{
     font-weight: 600;
+    padding-bottom: 1rem;
 }
 .card-action-btn{
     padding: 0.5rem;

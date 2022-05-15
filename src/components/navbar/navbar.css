@@ -104,3 +104,18 @@
    .nav-item i{
        color: var(--black-color);
    }
+   .nav-cart-item{
+    text-decoration: none;
+    position: relative;
+   }
+
+   .badge{
+    position: absolute;
+    top: -7px;
+    right: -9px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: small;
+   }

@@ -1,8 +1,9 @@
 import React from 'react'
 import './cart.css'
-import pic1 from '../../assets/women.jpg'
-import pic2 from '../../assets/women2.jpg'
+import pic1 from '../../assets/red.jpg'
+import pic2 from '../../assets/yellow.jpg'
 import {Navbar, Footer } from '../../components/index';
+import {Link} from 'react-router-dom'
 
 
 const Cart = () => {
@@ -13,8 +14,8 @@ const Cart = () => {
         <div className="main-container flex-flow-row mg-2">
             <div className="flex-flow-column cart-items">
                 <div className="card-cart card-component flex-flow-row card-horizontal">
-                    <img className="card-img card-img-horizontal" src={pic1}/>
-                  <div className="card-details flex-flow-column-horizontal flex-flow-column">
+                    <img className="cart-img card-img-horizontal" src={pic1}/>
+                  <div className="cart-details flex-flow-column-horizontal flex-flow-column">
                     <h3>Nike</h3>
                     <p>Red hoodie dress.</p>
                     <div className="dropdown flex-flow-row">
@@ -46,44 +47,10 @@ const Cart = () => {
                   </div>
                 </div>
 
-                <div className="card-cart card-component flex-flow-row card-horizontal">
-                    <img className="cart-img card-img-horizontal" src={pic2}/>
-                  <div className="cart-details flex-flow-column-horizontal flex-flow-column">
-                    <h3>H&M</h3>
-                    <p>Yellow H&M crop hoodie.</p>
-                    <div className="dropdown flex-flow-row">
-                        <label for="quantity">Qty</label>
-                        <select name="quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        </select>
-
-                        <label for="size">Size</label>
-                        <select name="size">
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                        </select>
-                    </div>
-
-                    <p className="price"><ins>Rs 1299</ins> <del>Rs 2299</del></p>
-                    <p>Delivery by 1 Mar 2022</p>
-                    <div className="card-actions">
-                        <button className="card-action-btn  card-btn">
-                            <i className="fa fa-cross  fa-lg"></i>Remove
-                        </button>
-                    </div>
-                  </div>
-                </div>   
-
                 <div className="card-cart card-component flex-flow-row card-horizontal  wishlist-add">
                     
                   <div className="card-details wishlist-add">
-                    <h3><a href="../wishlist/wishlist.html">Add more items from Wishlist!</a></h3>
+                    <Link to="whishlist"><h3>Add more items from Wishlist!</h3></Link>
                     </div>
                 </div>   
             </div>

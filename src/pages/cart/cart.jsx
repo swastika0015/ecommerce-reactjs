@@ -1,26 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './cart.css'
 import pic1 from '../../assets/red.jpg'
 import pic2 from '../../assets/yellow.jpg'
 import {Navbar, Footer } from '../../components/index';
 import {Link} from 'react-router-dom'
+import { useStateValue } from '../../context/cart-context';
 
 
 const Cart = () => {
+    const [{ cartList }, dispatch] = useStateValue();
+    console.log(cartList);
   return (
     <div>
         <Navbar/>
         <section>
         <div className="main-container flex-flow-row mg-2">
             <div className="flex-flow-column cart-items">
-                <div className="card-cart card-component flex-flow-row card-horizontal">
-                    <img className="cart-img card-img-horizontal" src={pic1}/>
+                {
+                    cartList.sort((a,b) => a.id - b.id).map(cart => <div key={cart.id} className="card-cart card-component flex-flow-row card-horizontal">
+                    <img className="cart-img card-img-horizontal" src={cart.img}/>
                   <div className="cart-details flex-flow-column-horizontal flex-flow-column">
-                    <h3>Nike</h3>
-                    <p>Red hoodie dress.</p>
+                    <h3>{cart.heading}</h3>
+                    <p>{cart.subheading}</p>
                     <div className="dropdown flex-flow-row">
                         <label for="quantity">Qty</label>
-                        <select name="quantity">
+                        <select onChange={(e) => dispatch({type: "INCREMENT_QTY", payload: cart, qty: e.target.value})} name="quantity">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -37,15 +41,16 @@ const Cart = () => {
                         </select>
                     </div>
 
-                    <p className="price"><ins>Rs 999</ins> <del>Rs 1299</del></p>
+                    <p className="price"><ins>{cart.price}</ins> <del>{cart.orignalPrice}</del></p>
                     <p>Delivery by 1 Mar 2022</p>
                     <div className="card-actions">
-                        <button className="card-action-btn  card-btn">
+                        <button className="card-action-btn  card-btn" onClick={() => dispatch({type: "REMOVE_FROM_CART", payload: cart})}>
                             <i className="fa fa-cross  fa-lg"></i>Remove
                         </button>
                     </div>
                   </div>
-                </div>
+                </div>)
+                }
 
                 <div className="card-cart card-component flex-flow-row card-horizontal  wishlist-add">
                     
@@ -70,7 +75,9 @@ const Cart = () => {
                     <hr/>
                     <div className="price-details flex-flow-row">
                         <p>Total MRP</p>
-                        <p>Rs 2299</p>
+                        <p>Rs {cartList.reduce((acc, curr) => {
+                            return acc + curr.qty * curr.price;
+                        }, 0)}</p>
                     </div>
     
                     <div className="price-details discount flex-flow-row">

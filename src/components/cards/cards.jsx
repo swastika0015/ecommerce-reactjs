@@ -1,8 +1,12 @@
 import React from 'react';
 import './cards.css';
 import { Link } from 'react-router-dom';
+import  {useStateValue}   from '../../context/cart-context'
+
 
 const Cards = (props) => {
+  const [{ cartList }, dispatch] = useStateValue();
+
   return (
             
             <div className="card card-component">               
@@ -18,19 +22,10 @@ const Cards = (props) => {
                 </div>
                 </Link>   
 
-                {props.cart.includes(props)> 0 ? (
-                  <button className=" card-action-btn" onClick={() => {
-                    props.setCart(props.cart.filter((c) => c.id !== props.id))
-                    console.log(props.cart)
-                  }}
-                  ><i className="fa fa-shopping-cart fa-lg"></i>Remove from Cart</button>
-                ):(
-                  <button className=" card-action-btn" onClick={() => {
-                    props.setCart([...props.cart, props])
-                    console.log(props.cart)
-                  }}
-                  ><i className="fa fa-shopping-cart fa-lg"></i>Add to card</button>
-                )}
+               {
+                 cartList.find(item => item.id === props.id) ?  <button onClick={() => dispatch({type: "REMOVE_FROM_CART", payload: props.product})} className=" card-action-btn"><i className="fa fa-shopping-cart fa-lg"></i>Remove from cart</button> :  <button onClick={() => dispatch({type: "ADD_TO_CART", payload: props.product})} className=" card-action-btn"><i className="fa fa-shopping-cart fa-lg"></i>Add to card</button>
+               }
+                 
                 <div className="card-actions">
                   
 

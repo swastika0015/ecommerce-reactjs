@@ -10,7 +10,7 @@ import {BrowserRouter as Router} from "react-router-dom"
 ReactDOM.render(
   <Router>
     <CartContextProvider>
-    <App />
+      <App />
     </CartContextProvider>
   </Router>,
   document.getElementById('root')

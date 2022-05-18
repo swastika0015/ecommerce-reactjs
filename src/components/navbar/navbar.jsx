@@ -1,8 +1,10 @@
 import "./navbar.css";
 import pic from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import { useStateValue } from "../../context/cart-context";
 
 const Navbar = () => {
+  const [{ cartList }, dispatch] = useStateValue();
     return (
 
         <header>
@@ -23,7 +25,7 @@ const Navbar = () => {
                 <Link to="/login"><div className="nav-item"><i className="fa fa-user fa-lg" aria-hidden="true"></i></div></Link>
                 <Link to="/whishlist"><div className="nav-item"><i className="fa fa-heart fa-lg" aria-hidden="true"></i></div></Link>
                 <Link to="/cart"><div className="nav-item nav-cart-item"><i className="fa fa-shopping-bag fa-lg" aria-hidden="true"></i>
-                <span class="badge">3</span>
+                <span class="badge">{cartList.length}</span>
                 </div></Link>                   
                 </div>
             </div>

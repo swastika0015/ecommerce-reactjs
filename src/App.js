@@ -9,7 +9,6 @@ import { Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <>
     <Routes>
       <Route path="/" exact element={<Homepage />} />
       <Route path="/productlist" element={<ProductList />} />
@@ -18,7 +17,6 @@ function App() {
       <Route path="/cart" element={<Cart/>} />
       <Route path="/productpage" element={<ProductPage/>} />
     </Routes>
-    </>
   );
 }
 

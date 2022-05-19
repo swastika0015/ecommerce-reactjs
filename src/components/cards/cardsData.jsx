@@ -13,8 +13,8 @@ export default [
         outofstock: '',
         heading: 'Hoodie',
         subheading: 'Crop Hoodies are cute, no?',
-        price: 'Rs 999',
-        originalPrice: 'Rs 1299',
+        price: 999,
+        originalPrice: 1299,
     },
     {
         id: 2,
@@ -22,8 +22,8 @@ export default [
         outofstock: '',
         heading: 'Hoodie',
         subheading: 'Crop Hoodies are cute, no?',
-        price: 'Rs 2999',
-        originalPrice: 'Rs 3299',       
+        price: 2999,
+        originalPrice: 3299,       
     },
     {
         id: 3,
@@ -31,8 +31,8 @@ export default [
         outofstock: '',
         heading: 'Hoodie',
         subheading: 'Crop Hoodies are cute, no?',
-        price: 'Rs 2199',
-        originalPrice: 'Rs 2699',       
+        price: 2199,
+        originalPrice: 2699,       
     },
     {
         id: 4,
@@ -40,8 +40,8 @@ export default [
         outofstock: '',
         heading: 'Hoodie',
         subheading: 'Crop Hoodies are cute, no?',
-        price: 'Rs 1499',
-        originalPrice: 'Rs 2399',       
+        price: 1499,
+        originalPrice: 2399,       
     },
     {
         id: 5,
@@ -49,8 +49,8 @@ export default [
         outofstock: '',
         heading: 'Hoodie',
         subheading: 'Crop Hoodies are cute, no?',
-        price: 'Rs 1999',
-        originalPrice: 'Rs 2699',       
+        price: 1999,
+        originalPrice: 2699,       
     },
     {
         id: 6,
@@ -58,8 +58,8 @@ export default [
         outofstock: '',
         heading: 'Trouser',
         subheading: ' Lorem ipsum dolor sit, ecessitati',
-        price: 'Rs 2299',
-        originalPrice: 'Rs 3799',       
+        price: 2299,
+        originalPrice: 3799,       
     },
     {
         id: 7,
@@ -67,8 +67,8 @@ export default [
         outofstock: '',
         heading: 'Jwellery',
         subheading: 'Neck chain for jwellery category',
-        price: 'Rs 999',
-        originalPrice: 'Rs 1299',       
+        price: 999,
+        originalPrice: 1299,       
     },
     {
         id: 8,
@@ -76,7 +76,7 @@ export default [
         outofstock: 'Out of stock',
         heading: 'Hoodie',
         subheading: 'Lorem ipsum dolor sit, ecessitati',
-        price: 'Rs 1699',
-        originalPrice: 'Rs 2299',
+        price: 1699,
+        originalPrice: 2299,
     }
 ]

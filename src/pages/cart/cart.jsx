@@ -41,8 +41,8 @@ const Cart = () => {
                         </select>
                     </div>
 
-                    <p className="price"><ins>{cart.price}</ins> <del>{cart.orignalPrice}</del></p>
-                    <p>Delivery by 1 Mar 2022</p>
+                    <p className="price"><ins>Rs {cart.price}</ins> <del>Rs {cart.originalPrice}</del></p>
+                    <p className='delivery-date'>Delivery by 1 Mar 2022</p>
                     <div className="card-actions">
                         <button className="card-action-btn  card-btn" onClick={() => dispatch({type: "REMOVE_FROM_CART", payload: cart})}>
                             <i className="fa fa-cross  fa-lg"></i>Remove
@@ -82,7 +82,9 @@ const Cart = () => {
     
                     <div className="price-details discount flex-flow-row">
                         <p>Discount</p>
-                        <p>Rs 1300</p>
+                        <p>Rs {cartList.reduce((acc, curr) => {
+                            return acc + curr.qty * curr.originalPrice;
+                        }, 0)}</p>
                     </div>
                     <hr/>
                     <div className="price-details discount flex-flow-row">
@@ -92,7 +94,9 @@ const Cart = () => {
                     <hr/>
                     <div className="price-details discount flex-flow-row">
                         <h3>Total Amount</h3>
-                        <h3>Rs 2299</h3>
+                        <h3>Rs {cartList.reduce((acc, curr) => {
+                            return acc + curr.qty * curr.price;
+                        }, 0)}</h3>
                     </div>
                     <hr/>
 

@@ -10,13 +10,13 @@ const Sidebar = () => {
                 <h3>Categories</h3>
                 <div class="radio-btns">
                     <input type="checkbox" value="#"/>
-                    <label for="">Tops and Tees</label><br/>
+                    <label >Tops and Tees</label><br/>
                     <input type="checkbox" value="#"/>
-                    <label for="">Jeans and Trousers</label><br/>
+                    <label >Jeans and Trousers</label><br/>
                     <input type="checkbox" value="#"/>
-                    <label for="">Jewellery</label><br/>
+                    <label >Jewellery</label><br/>
                     <input type="checkbox" value="#"/>
-                    <label for="">Crop Hoodie</label><br/>
+                    <label >Crop Hoodie</label><br/>
                 </div>
             </div>
             <div class="sidebar-item">
@@ -24,43 +24,43 @@ const Sidebar = () => {
                 <div class="slide-container radio-btns">
                     <input type="range" class="slider" min="500" max="10000" value="5000"/><br/>
                     <input type="checkbox" name="price" value="500 - 1500"/>
-                    <label for="">500 - 1500</label><br/>
+                    <label >500 - 1500</label><br/>
                     <input type="checkbox" name="price"  value="1500 - 3000"/>
-                    <label for="">1500 - 3000</label><br/>  
+                    <label >1500 - 3000</label><br/>  
                     <input type="checkbox" name="price" value="3000 - 5000"/>
-                    <label for="">3000 - 5000</label><br/>
+                    <label >3000 - 5000</label><br/>
                 </div>
             </div>
             <div class="sidebar-item">
                 <h3>Colors</h3>
                 <div class="colors-container radio-btns">
                     <input type="checkbox" value="#"/>
-                    <label for=""><i class="fa fa-circle red"></i>Red</label><br/>
+                    <label ><i class="fa fa-circle red"></i>Red</label><br/>
                     <input type="checkbox" value="#"/>
-                    <label for=""><i class="fa fa-circle green"></i>Green</label><br/>  
+                    <label ><i class="fa fa-circle green"></i>Green</label><br/>  
                     <input type="checkbox" value="#"/>
-                    <label for=""><i class="fa fa-circle blue"></i>Blue</label><br/>
+                    <label ><i class="fa fa-circle blue"></i>Blue</label><br/>
                     <input type="checkbox" value="#"/>
-                    <label for=""><i class="fa fa-circle  black"></i>Black</label><br/>
+                    <label ><i class="fa fa-circle  black"></i>Black</label><br/>
                     <input type="checkbox" value="#"/>
-                    <label for=""><i class="fa fa-circle purple"></i>Purple</label><br/>
+                    <label ><i class="fa fa-circle purple"></i>Purple</label><br/>
                     <input type="checkbox" value="#"/>
-                    <label for=""><i class="fa fa-circle pink"></i>Pink</label><br/>
+                    <label ><i class="fa fa-circle pink"></i>Pink</label><br/>
                     <input type="checkbox" value="#"/>
-                    <label for=""><i class="fa fa-circle yellow"></i>Yellow</label><br/>
+                    <label ><i class="fa fa-circle yellow"></i>Yellow</label><br/>
                 </div>
             </div>
             <div class="sidebar-item">
                 <h3>Ratings</h3>
                 <div class="ratings-container radio-btns">
                     <input type="radio" name="ratings" value="4 stars and above"/>
-                    <label for="">4 stars and above</label><br/>
+                    <label >4 stars and above</label><br/>
                     <input type="radio" name="ratings" value="3 stars and above"/>
-                    <label for="">3 stars and above</label><br/>  
+                    <label >or3 stars and above</label><br/>  
                     <input type="radio" name="ratings" value="2 stars and above"/>
-                    <label for="">2 stars and above</label><br/>  
+                    <label >2 stars and above</label><br/>  
                     <input type="radio" name="ratings" value="Below 2 stars"/>
-                    <label for="">Below 2 stars</label><br/>
+                    <label >Below 2 stars</label><br/>
                 </div>
             </div>
         </div>

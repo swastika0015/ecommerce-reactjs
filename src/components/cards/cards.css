@@ -14,6 +14,7 @@
 .card{
     box-shadow: none;
     margin: 5px;
+    color: var(--black-color);
 }
 .card:hover{
     box-shadow: 0 5px 5px var(--shadow-color), 0 6px 20px 0 var(--shadow-color);;

@@ -1,5 +1,5 @@
 import React from 'react'
-import pic from '../../assets/women.jpg'
+import pic from '../../assets/red.jpg'
 import './productpage.css'
 import { Navbar, Footer } from '../../components'
 

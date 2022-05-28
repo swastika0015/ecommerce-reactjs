@@ -5,6 +5,8 @@ import { Footer } from '../../components';
 import Sidebar from '../../components/sidebar/sidebar';
 import Productcards from '../../components/cards/productcards';
 
+
+
 const ProductList = () => {
   return (
     <>

@@ -1,5 +1,6 @@
-import pic1 from '../../assets/women.jpg';
-import pic2 from '../../assets/beauty.jpg'
+import pic1 from '../../assets/red.jpg';
+import pic2 from '../../assets/beauty.jpg';
+import pic3 from '../../assets/sale.jpg';
 
 export default [
     {
@@ -11,7 +12,7 @@ export default [
         heading: "Beauty"
     },
     {
-        img: pic1,
+        img: pic3,
         heading: "Flash sale" 
     }
 ]

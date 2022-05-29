@@ -22,12 +22,12 @@ const Cards = (props) => {
                 </div>
                 </Link>   
 
+              <div className="card-actions flex-flow-row">
                {
-                 cartList.find(item => item.id === props.id) ?  <button onClick={() => dispatch({type: "REMOVE_FROM_CART", payload: props.product})} className=" card-action-btn"><i className="fa fa-shopping-cart fa-lg"></i>Remove from cart</button> :  <button onClick={() => dispatch({type: "ADD_TO_CART", payload: props.product})} className=" card-action-btn"><i className="fa fa-shopping-cart fa-lg"></i>Add to card</button>
+                 cartList.find(item => item.id === props.id) ?  <button onClick={() => dispatch({type: "REMOVE_FROM_CART", payload: props.product})} className=" card-action-btn">Remove from cart</button> :  <button onClick={() => dispatch({type: "ADD_TO_CART", payload: props.product})} className=" card-action-btn">Add to card</button>
                }
-                 
-                <div className="card-actions">
-                  
+            
+                <button className=" card-action-btn wishlist-btn"><i className="fa fa-heart fa-lg"></i></button> 
 
                 </div>
             </div>     

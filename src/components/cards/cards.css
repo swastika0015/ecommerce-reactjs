@@ -63,6 +63,10 @@
     font-weight: 600;
     padding-bottom: 1rem;
 }
+
+.card-actions{
+    margin: 00.5rem;
+}
 .card-action-btn{
     padding: 0.5rem;
     border: 1px solid var(--primary-color);
@@ -72,7 +76,6 @@
     gap: 0.5rem;
     justify-content: center;
     width: 90%;
-    margin: 1rem;
     margin-top: 0rem;
 }
 
@@ -82,6 +85,12 @@
     color: var(--white-color);
 }
 
+.wishlist-btn{
+    width: auto;
+    color: var(--primary-color);
+    padding-top: 0.75rem;
+    border-left: none;
+}
 .bestseller-badge{
     position: absolute;
     top: 0px;

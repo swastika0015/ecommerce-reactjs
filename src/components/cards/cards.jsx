@@ -1,7 +1,7 @@
 import React from 'react'
 import './cards.css'
 import { Link } from 'react-router-dom'
-import { useStateValue } from '../../context/cart-context'
+import { useStateValue } from '../../context/products.context'
 
 const Cards = (props) => {
     const [{ cartList }, dispatch] = useStateValue()

@@ -2,14 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
-import CartContextProvider from './context/cart-context'
+import ProductsContextProvider from './context/products.context'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.render(
     <Router>
-        <CartContextProvider>
+        <ProductsContextProvider>
             <App />
-        </CartContextProvider>
+        </ProductsContextProvider>
     </Router>,
     document.getElementById('root')
 )

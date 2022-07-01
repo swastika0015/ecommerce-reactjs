@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import './cart.css'
-import pic1 from '../../assets/red.jpg'
-import pic2 from '../../assets/yellow.jpg'
 import { Navbar, Footer } from '../../components/index'
 import { Link } from 'react-router-dom'
-import { useStateValue } from '../../context/cart-context'
+import { useStateValue } from '../../context/products.context'
 
 const Cart = () => {
     const [{ cartList }, dispatch] = useStateValue()

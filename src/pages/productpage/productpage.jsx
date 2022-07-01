@@ -4,6 +4,7 @@ import './productpage.css'
 import { Navbar, Footer } from '../../components'
 
 const ProductPage = () => {
+    // Functionality pending!
     return (
         <div>
             <Navbar />

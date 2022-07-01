@@ -1,7 +1,7 @@
 import './navbar.css'
 import pic from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
-import { useStateValue } from '../../context/cart-context'
+import { useStateValue } from '../../context/products.context'
 
 const Navbar = () => {
     const [{ cartList }, dispatch] = useStateValue()
@@ -66,7 +66,7 @@ const Navbar = () => {
                                     className="fa fa-shopping-bag fa-lg"
                                     aria-hidden="true"
                                 ></i>
-                                <span class="badge">{cartList.length}</span>
+                                <span className="badge">{cartList.length}</span>
                             </div>
                         </Link>
                     </div>

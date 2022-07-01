@@ -5,7 +5,6 @@ import pic4 from '../../assets/purple.jpg'
 import pic5 from '../../assets/jwellery.jpg'
 import pic6 from '../../assets/pant.jpg'
 
-
 export default [
     {
         id: 1,
@@ -23,7 +22,7 @@ export default [
         heading: 'Hoodie',
         subheading: 'Crop Hoodies are cute, no?',
         price: 2999,
-        originalPrice: 3299,       
+        originalPrice: 3299,
     },
     {
         id: 3,
@@ -32,7 +31,7 @@ export default [
         heading: 'Hoodie',
         subheading: 'Crop Hoodies are cute, no?',
         price: 2199,
-        originalPrice: 2699,       
+        originalPrice: 2699,
     },
     {
         id: 4,
@@ -41,7 +40,7 @@ export default [
         heading: 'Hoodie',
         subheading: 'Crop Hoodies are cute, no?',
         price: 1499,
-        originalPrice: 2399,       
+        originalPrice: 2399,
     },
     {
         id: 5,
@@ -50,7 +49,7 @@ export default [
         heading: 'Hoodie',
         subheading: 'Crop Hoodies are cute, no?',
         price: 1999,
-        originalPrice: 2699,       
+        originalPrice: 2699,
     },
     {
         id: 6,
@@ -59,7 +58,7 @@ export default [
         heading: 'Trouser',
         subheading: ' Lorem ipsum dolor sit, ecessitati',
         price: 2299,
-        originalPrice: 3799,       
+        originalPrice: 3799,
     },
     {
         id: 7,
@@ -68,7 +67,7 @@ export default [
         heading: 'Jwellery',
         subheading: 'Neck chain for jwellery category',
         price: 999,
-        originalPrice: 1299,       
+        originalPrice: 1299,
     },
     {
         id: 8,
@@ -78,5 +77,5 @@ export default [
         subheading: 'Lorem ipsum dolor sit, ecessitati',
         price: 1699,
         originalPrice: 2299,
-    }
+    },
 ]

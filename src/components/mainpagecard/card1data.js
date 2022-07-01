@@ -1,18 +1,18 @@
-import pic1 from '../../assets/red.jpg';
-import pic2 from '../../assets/beauty.jpg';
-import pic3 from '../../assets/sale.jpg';
+import pic1 from '../../assets/red.jpg'
+import pic2 from '../../assets/beauty.jpg'
+import pic3 from '../../assets/sale.jpg'
 
 export default [
     {
         img: pic1,
-        heading: "Apparel"
+        heading: 'Apparel',
     },
     {
         img: pic2,
-        heading: "Beauty"
+        heading: 'Beauty',
     },
     {
         img: pic3,
-        heading: "Flash sale" 
-    }
+        heading: 'Flash sale',
+    },
 ]

@@ -1,41 +1,43 @@
-
 /*sidebar*/
-.sidebar{
+.sidebar {
     min-width: 15rem;
 }
-.sidebar-item{
+.sidebar-item {
     border-top: 1px solid var(--dark-grey-color);
     padding: 1rem;
 }
 
-.sidebar-heading{
+.sidebar-heading {
     margin: 1rem;
 }
-.radio-btns label,input[type="radio"], input[type="checkbox"], h3{
+.radio-btns label,
+input[type='radio'],
+input[type='checkbox'],
+h3 {
     margin: 0.5rem;
     display: inline-block;
 }
-.colors-container i{
+.colors-container i {
     margin-right: 00.5rem;
 }
-.red{
+.red {
     color: red;
 }
-.green{
+.green {
     color: green;
 }
-.blue{
+.blue {
     color: blue;
 }
-.yellow{
+.yellow {
     color: yellow;
 }
-.black{
+.black {
     color: black;
 }
-.pink{
+.pink {
     color: pink;
 }
-.purple{
+.purple {
     color: purple;
 }

@@ -1,6 +1,4 @@
-
-
-section{
+section {
     padding: 0;
 }
 
@@ -9,21 +7,19 @@ section{
     height: 8px;
     background: var(--grey-color);
     opacity: 0.9;
-    border-radius:2rem;
+    border-radius: 2rem;
     border: 1px solid var(--dark-grey-color);
     width: 90%;
-}  
+}
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width:1.25rem;
+    width: 1.25rem;
     height: 1.25rem;
     background: var(--dark-grey-color);
     cursor: pointer;
     border-radius: 50%;
 }
-.slider:hover{
+.slider:hover {
     opacity: 1;
 }
-
-

@@ -1,16 +1,21 @@
 .mg-2 {
     margin: 2rem;
 }
+
 .product-img {
-    width: 24rem;
+    width: auto;
     height: 30rem;
+    border-radius: 15px;
+    overflow: hidden;
 }
+
 .card-details {
     text-align: left;
     padding: 0;
     padding-left: 1rem;
     justify-content: space-between;
 }
+
 .img-container {
     height: auto;
     width: 50rem;
@@ -18,17 +23,21 @@
     padding: 1rem;
     justify-content: space-evenly;
 }
+
 .product-info {
     gap: 1rem;
     padding: 2rem;
     width: 34rem;
 }
+
 .product-actions {
     gap: 1rem;
 }
+
 .dropdown {
     gap: 1rem;
 }
+
 .cart-btn {
     color: var(--white-color);
     background-color: var(--primary-color);
@@ -39,35 +48,43 @@
     font-size: 1.2rem;
     padding: 0;
 }
+
 .cart-btn:hover {
     opacity: 1;
 }
+
 .wishlist {
     color: var(--primary-color);
     background-color: var(--white-color);
     opacity: 0.8;
     border: 1px solid var(--primary-color);
 }
+
 .wishlist:hover {
     border: 2px solid var(--primary-color);
 }
+
 .sizes {
     gap: 1rem;
 }
+
 .avatar {
     font-size: 1rem;
     border: 1px solid var(--dark-grey-color);
 }
+
 .avatar:hover {
     cursor: pointer;
     background-color: var(--primary-color);
     color: var(--white-color);
 }
+
 .review {
     border: 1px solid var(--dark-grey-color);
     border-radius: 0.5rem;
     padding: 1rem;
 }
+
 .avatar-text {
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -76,12 +93,49 @@
     display: flex;
     align-items: center;
 }
+
 .avatar {
     font-size: 1rem;
     border: 1px solid var(--dark-grey-color);
     border-radius: 50%;
 }
+
 .avatar-xs {
     width: 3rem;
     height: 3rem;
+}
+
+.product-image-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-inactive-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px
+}
+
+.image-wrapper {
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.product-inactive-img {
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    max-width: 100px;
+    max-height: 100px;
+
+}
+
+.active-image {
+    border: 3px solid #000;
+    transition: border .1s ease-in-out;
 }

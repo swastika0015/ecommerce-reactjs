@@ -4,7 +4,7 @@ import './footer.css'
 const Footer = () => {
     return (
         <footer className="footer">
-            <h3>Made with 💜 by Swastika</h3>
+            <a href="https://github.com/swastika0015" target="_blank" rel="noreferrer" >Made with 💜 by Swastika</a>
         </footer>
     )
 }

@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@350&display=swap');
+
 .section {
     padding: 2rem;
 }
+
 .main-container {
     position: relative;
 }
+
 .img-main {
+    border-radius: 15px;
     width: 100%;
     object-fit: cover;
     height: 34rem;
 }
+
 .btn-container {
     text-align: center;
     background-color: var(--black-color);
@@ -18,6 +23,7 @@
     left: 37%;
     border-radius: 0.5rem;
 }
+
 .btn {
     margin: 4rem 9rem 4rem 9rem;
     padding: 0.5rem 1rem;
@@ -28,6 +34,7 @@
     border: none;
     font-weight: 500;
 }
+
 .btn a:link {
     color: var(--primary-color);
 }

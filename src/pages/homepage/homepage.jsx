@@ -1,7 +1,7 @@
 import React from 'react'
 import pic from '../../assets/main.jpg'
+import { Footer, MainPageCard, Navbar } from '../../components/index'
 import './homepage.css'
-import { Navbar, Footer, Mainpagecard } from '../../components/index'
 
 const Homepage = () => {
     return (
@@ -9,9 +9,9 @@ const Homepage = () => {
             <Navbar />
             <section className="section">
                 <div className="main-container">
-                    <img className="img-main" src={pic} />
+                    <img className="img-main" src={pic} alt="home hero"/>
                 </div>
-                <Mainpagecard />
+                <MainPageCard />
             </section>
             <Footer />
         </div>

@@ -1,7 +1,7 @@
-import './navbar.css'
-import pic from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
+import pic from '../../assets/logo.png'
 import { useStateValue } from '../../context/products.context'
+import './navbar.css'
 
 const Navbar = () => {
     const [{ cartList }, dispatch] = useStateValue()

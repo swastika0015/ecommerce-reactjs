@@ -2,6 +2,7 @@
 .sidebar {
     min-width: 15rem;
 }
+
 .sidebar-item {
     border-top: 1px solid var(--dark-grey-color);
     padding: 1rem;
@@ -10,6 +11,7 @@
 .sidebar-heading {
     margin: 1rem;
 }
+
 .radio-btns label,
 input[type='radio'],
 input[type='checkbox'],
@@ -17,27 +19,35 @@ h3 {
     margin: 0.5rem;
     display: inline-block;
 }
+
 .colors-container i {
     margin-right: 00.5rem;
 }
+
 .red {
     color: red;
 }
+
 .green {
     color: green;
 }
+
 .blue {
     color: blue;
 }
+
 .yellow {
     color: yellow;
 }
+
 .black {
     color: black;
 }
+
 .pink {
     color: pink;
 }
+
 .purple {
     color: purple;
 }

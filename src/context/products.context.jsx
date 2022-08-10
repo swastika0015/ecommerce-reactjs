@@ -1,16 +1,15 @@
-import { createContext, useContext } from 'react'
-import { useReducer } from 'react'
-import productsData from '../productsData'
-import { productsReducer } from '../reducer/products.reducer'
+import { createContext, useContext, useReducer } from "react"
+import productsData from "../productsData"
+import { productsReducer } from "../reducer/products.reducer"
 
 export const initialState = {
     cartList: [],
     products: [...productsData],
     filters: {
-        category: '',
-        price: '',
-        color: '',
-        rating: '',
+        category: "",
+        price: "",
+        color: "",
+        rating: "",
     },
 }
 

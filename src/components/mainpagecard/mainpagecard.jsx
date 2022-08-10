@@ -1,6 +1,6 @@
-import React from 'react'
-import Card1 from './card1'
-import card1data from './card1data'
+import React from "react"
+import Card1 from "./card1"
+import card1data from "./card1data"
 
 const MainPageCard = () => {
     const cardElements = card1data.map((card) => {

@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import './cart.css'
-import { Navbar, Footer } from '../../components/index'
-import { Link } from 'react-router-dom'
-import { useStateValue } from '../../context/products.context'
+import React, { useState } from "react"
+import { Link } from "react-router-dom"
+import { Footer, Navbar } from "../../components/index"
+import { useStateValue } from "../../context/products.context"
+import "./cart.css"
 
 const Cart = () => {
     const [{ cartList }, dispatch] = useStateValue()
@@ -23,6 +23,7 @@ const Cart = () => {
                                     <img
                                         className="cart-img card-img-horizontal"
                                         src={cart.img}
+                                        alt="Crop Hoodies"
                                     />
                                     <div className="cart-details flex-flow-column-horizontal flex-flow-column">
                                         <h3>{cart.heading}</h3>
@@ -32,7 +33,7 @@ const Cart = () => {
                                             <select
                                                 onChange={(e) =>
                                                     dispatch({
-                                                        type: 'INCREMENT_QTY',
+                                                        type: "INCREMENT_QTY",
                                                         payload: cart,
                                                         qty: e.target.value,
                                                     })
@@ -56,7 +57,7 @@ const Cart = () => {
                                         </div>
 
                                         <p className="price">
-                                            <ins>Rs {cart.price}</ins>{' '}
+                                            <ins>Rs {cart.price}</ins>{" "}
                                             <del>Rs {cart.originalPrice}</del>
                                         </p>
                                         <p className="delivery-date">
@@ -67,7 +68,7 @@ const Cart = () => {
                                                 className="card-action-btn  card-btn"
                                                 onClick={() =>
                                                     dispatch({
-                                                        type: 'REMOVE_FROM_CART',
+                                                        type: "REMOVE_FROM_CART",
                                                         payload: cart,
                                                     })
                                                 }
@@ -106,7 +107,7 @@ const Cart = () => {
                         <div className="price-details flex-flow-row">
                             <p>Total MRP</p>
                             <p>
-                                Rs{' '}
+                                Rs{" "}
                                 {cartList.reduce((acc, curr) => {
                                     return acc + curr.qty * curr.price
                                 }, 0)}
@@ -116,7 +117,7 @@ const Cart = () => {
                         <div className="price-details discount flex-flow-row">
                             <p>Discount</p>
                             <p>
-                                Rs{' '}
+                                Rs{" "}
                                 {cartList.reduce((acc, curr) => {
                                     return acc + curr.qty * curr.originalPrice
                                 }, 0)}
@@ -124,14 +125,14 @@ const Cart = () => {
                         </div>
                         <hr />
                         <div className="price-details discount flex-flow-row">
-                            <p>Convinience fee</p>
+                            <p>Convenience fee</p>
                             <p>Free</p>
                         </div>
                         <hr />
                         <div className="price-details discount flex-flow-row">
                             <h3>Total Amount</h3>
                             <h3>
-                                Rs{' '}
+                                Rs{" "}
                                 {cartList.reduce((acc, curr) => {
                                     return acc + curr.qty * curr.price
                                 }, 0)}

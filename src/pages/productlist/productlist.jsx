@@ -1,10 +1,9 @@
-import React from 'react'
-import './productlist.css'
-import { Navbar } from '../../components'
-import { Footer } from '../../components'
-import Sidebar from '../../components/sidebar/sidebar'
-import Productcards from '../../components/cards/productcards'
-import { useStateValue } from '../../context/products.context'
+import React from "react"
+import { Footer, Navbar } from "../../components"
+import Productcards from "../../components/cards/productcards"
+import Sidebar from "../../components/sidebar/sidebar"
+import { useStateValue } from "../../context/products.context"
+import "./productlist.css"
 
 const ProductList = () => {
     const [_, dispatch] = useStateValue()
@@ -14,18 +13,18 @@ const ProductList = () => {
             <div className="filter-sort">
                 <h3 className="sidebar-heading">FILTERS</h3>
                 <h3
-                    onClick={() => dispatch({ type: 'CLEAR_FILTER' })}
+                    onClick={() => dispatch({ type: "CLEAR_FILTER" })}
                     className="sidebar-heading"
                     style={{
-                        marginLeft: '4rem',
-                        color: 'gray',
-                        cursor: 'pointer',
+                        marginLeft: "4rem",
+                        color: "gray",
+                        cursor: "pointer",
                     }}
                 >
                     Clear
                     <i
                         class="fa fa-close fa-lg"
-                        style={{ marginLeft: '0.3rem' }}
+                        style={{ marginLeft: "0.3rem" }}
                     ></i>
                 </h3>
             </div>

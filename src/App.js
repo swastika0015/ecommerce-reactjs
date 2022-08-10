@@ -1,6 +1,6 @@
-import { Route, Routes } from 'react-router-dom'
-import './App.css'
-import { Cart, Homepage, Login, ProductList, ProductPage } from './pages'
+import { Route, Routes } from "react-router-dom"
+import "./App.css"
+import { Cart, Homepage, Login, ProductList, ProductPage } from "./pages"
 
 function App() {
     return (

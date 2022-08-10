@@ -1,13 +1,13 @@
-import React from 'react'
-import { useStateValue } from '../../context/products.context'
-import './sidebar.css'
+import React from "react"
+import { useStateValue } from "../../context/products.context"
+import "./sidebar.css"
 
 const Sidebar = () => {
     const [_, dispatch] = useStateValue()
 
     const handleFilters = (e) => {
         dispatch({
-            type: 'SET_FILTER',
+            type: "SET_FILTER",
             payload: { type: e.target.name, filter: e.target.value },
         })
     }

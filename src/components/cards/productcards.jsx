@@ -1,7 +1,7 @@
-import React from 'react'
-import { useStateValue } from '../../context/products.context'
-import Cards from './cards'
-import './productcards.css'
+import React from "react"
+import { useStateValue } from "../../context/products.context"
+import Cards from "./cards"
+import "./productcards.css"
 
 const Productcards = () => {
     const [{ products, filters }] = useStateValue()
@@ -10,13 +10,13 @@ const Productcards = () => {
     const getFilteredProducts = () => {
         for (let [key, value] of Object.entries(filters)) {
             if (!value) {
-            } else if (key === 'category')
+            } else if (key === "category")
                 _products = [
                     ..._products.filter((item) => item.category === value),
                 ]
-            else if (key === 'price') {
-                const lowerPrice = value.split(' - ')[0]
-                const upperPrice = value.split(' - ')[1]
+            else if (key === "price") {
+                const lowerPrice = value.split(" - ")[0]
+                const upperPrice = value.split(" - ")[1]
                 _products = [
                     ..._products.filter((item) => {
                         if (
@@ -28,14 +28,14 @@ const Productcards = () => {
                         return false
                     }),
                 ]
-            } else if (key === 'color') {
+            } else if (key === "color") {
                 _products = [
                     ..._products.filter((item) => {
                         if (item.color === value) return true
                         return false
                     }),
                 ]
-            } else if (key === 'rating') {
+            } else if (key === "rating") {
                 _products = [
                     ..._products.filter((item) => {
                         if (Number(value) === 1 && item.rating === 1) {

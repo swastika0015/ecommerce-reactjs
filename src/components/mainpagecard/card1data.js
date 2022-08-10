@@ -1,5 +1,6 @@
-import pic1 from '../../assets/red.jpg'
+/* eslint-disable import/no-anonymous-default-export */
 import pic2 from '../../assets/beauty.jpg'
+import pic1 from '../../assets/red.jpg'
 import pic3 from '../../assets/sale.jpg'
 
 export default [

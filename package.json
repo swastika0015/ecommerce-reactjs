@@ -39,7 +39,6 @@
         ]
     },
     "devDependencies": {
-        "prettier": "^2.7.1",
         "webpack-serve": "^4.0.0"
     }
 }

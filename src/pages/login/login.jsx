@@ -1,8 +1,7 @@
-import React from 'react'
-import './login.css'
-import pic from '../../assets/logo.png'
-import { Navbar } from '../../components'
-import { Footer } from '../../components'
+import React from "react"
+import pic from "../../assets/logo.png"
+import { Footer, Navbar } from "../../components"
+import "./login.css"
 
 function Login() {
     return (
@@ -37,7 +36,7 @@ function Login() {
                         <button className="input-btn">Login</button>
                     </div>
                     <p>
-                        Create a new account?{' '}
+                        Create a new account?{" "}
                         <a href="signup.html">Click here</a>
                     </p>
                 </div>

@@ -5,9 +5,11 @@
     border: 1px solid var(--dark-grey-color);
     padding: 1rem;
 }
+
 .cart-img {
     width: 10rem;
 }
+
 .cart-details {
     text-align: left;
     padding: 0;
@@ -18,16 +20,20 @@
 .cart-details ins {
     text-decoration: none;
 }
+
 .main-container {
     justify-content: center;
 }
+
 .cart-items {
     gap: 1rem;
     padding: 1rem;
 }
+
 .dropdown label {
     padding: 0 5px 0 0;
 }
+
 .dropdown select {
     margin: 0 9px 0 0;
 }
@@ -39,9 +45,11 @@
     width: fit-content;
     gap: 0;
 }
+
 .delivery-date {
     margin-top: -1rem;
 }
+
 .wishlist-add:hover {
     background-color: var(--grey-color);
     cursor: pointer;
@@ -55,13 +63,16 @@
     margin: 1rem;
     border: 1px solid var(--dark-grey-color);
 }
+
 .price-details {
     justify-content: space-between;
 }
+
 hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
 .cart-btn {
     color: var(--white-color);
     background-color: var(--primary-color);
@@ -71,6 +82,7 @@ hr {
     width: 100%;
     padding: 0.5rem;
 }
+
 .cart-btn:hover {
     opacity: 1;
 }

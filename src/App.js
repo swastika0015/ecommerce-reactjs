@@ -1,10 +1,6 @@
-import './App.css'
-import { Homepage } from './pages'
-import { ProductList } from './pages'
-import { ProductPage } from './pages'
-import { Cart } from './pages'
-import { Login } from './pages'
-import { Routes, Route } from 'react-router-dom'
+import { Route, Routes } from "react-router-dom"
+import "./App.css"
+import { Cart, Homepage, Login, ProductList, ProductPage } from "./pages"
 
 function App() {
     return (

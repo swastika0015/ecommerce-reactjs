@@ -3,8 +3,10 @@
     justify-content: center;
     margin: 4rem;
 }
+
 .input-container {
-    background-color: var(--white-color);
+    border-radius: 15px;
+    background-color: #ffff;
     gap: 1.5rem;
     width: 21rem;
     box-shadow: 0 5px 5px var(--shadow-color), 0 6px 20px 0 var(--shadow-color);
@@ -15,15 +17,18 @@
     color: var(--primary-color);
     text-decoration: none;
 }
+
 a:visited {
     color: var(--black-color);
     text-decoration: none;
 }
+
 a:hover {
     color: var(--black-color);
     text-decoration: none;
     cursor: pointer;
 }
+
 a:active {
     color: var(--primary-color);
     text-decoration: none;
@@ -32,10 +37,12 @@ a:active {
 .input-box span {
     color: red;
 }
+
 .input-box label {
     padding: 2px;
     font-size: 12px;
 }
+
 .input {
     padding: 7px;
     border-radius: 0.5rem;
@@ -43,6 +50,7 @@ a:active {
     width: 100%;
     box-sizing: border-box;
 }
+
 .input-btn {
     padding: 8px;
     border-radius: 0.5rem;
@@ -52,16 +60,19 @@ a:active {
     border: none;
     margin-top: 0.5rem;
 }
+
 .input-btn:hover {
     color: var(--primary-color);
     background-color: var(--white-color);
     cursor: pointer;
     border: 1px solid var(--primary-color);
 }
+
 .password a {
     font-size: 1rem;
     padding: 8px;
 }
+
 .input-box label {
     font-size: 1rem;
 }

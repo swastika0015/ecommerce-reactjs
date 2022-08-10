@@ -1,9 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
-import ProductsContextProvider from './context/products.context'
-import { BrowserRouter as Router } from 'react-router-dom'
+import React from "react"
+import ReactDOM from "react-dom"
+import { BrowserRouter as Router } from "react-router-dom"
+import App from "./App"
+import ProductsContextProvider from "./context/products.context"
+import "./index.css"
 
 ReactDOM.render(
     <Router>
@@ -11,7 +11,7 @@ ReactDOM.render(
             <App />
         </ProductsContextProvider>
     </Router>,
-    document.getElementById('root')
+    document.getElementById("root")
 )
 
 // If you want to start measuring performance in your app, pass a function

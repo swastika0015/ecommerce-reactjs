@@ -1,10 +1,10 @@
-import React from 'react'
-import './card1.css'
+import React from "react"
+import "./card1.css"
 
 const Card1 = (props) => {
     return (
         <div className="card shadow card1-component">
-            <img className="card1-img" src={props.img} />
+            <img className="card1-img" src={props.img} alt="product" />
             <div className="card1-details flex-flow-column">
                 <h2>
                     <a>{props.heading}</a>

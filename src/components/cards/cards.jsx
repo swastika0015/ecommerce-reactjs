@@ -1,7 +1,7 @@
-import React from 'react'
-import './cards.css'
-import { Link } from 'react-router-dom'
-import { useStateValue } from '../../context/products.context'
+import React from "react"
+import { Link } from "react-router-dom"
+import { useStateValue } from "../../context/products.context"
+import "./cards.css"
 
 const Cards = (props) => {
     const [{ cartList }, dispatch] = useStateValue()
@@ -19,7 +19,7 @@ const Cards = (props) => {
                     <h2>{props.heading}</h2>
                     <p>{props.subheading}</p>
                     <p className="price">
-                        <ins>{props.price}</ins>{' '}
+                        <ins>{props.price}</ins>{" "}
                         <del>{props.originalPrice}</del>
                     </p>
                 </div>
@@ -29,7 +29,7 @@ const Cards = (props) => {
                 <button
                     onClick={() =>
                         dispatch({
-                            type: 'REMOVE_FROM_CART',
+                            type: "REMOVE_FROM_CART",
                             payload: props.product,
                         })
                     }
@@ -42,7 +42,7 @@ const Cards = (props) => {
                 <button
                     onClick={() =>
                         dispatch({
-                            type: 'ADD_TO_CART',
+                            type: "ADD_TO_CART",
                             payload: props.product,
                         })
                     }
